@@ -1,0 +1,12 @@
+
+error: Controller session userPremium Cast to ObjectId failed for value "{ uid: '658df43576ca26796f721052' }" (type Object) at path "_id" for model "users", undefined
+error: Controller session userPremium Cast to ObjectId failed for value "{ uid: '658df43576ca26796f721052' }" (type Object) at path "_id" for model "users", undefined
+error: Controller session userPremium email is not defined, undefined
+error: Middleware auth.js adminAccess Cannot read properties of undefined (reading 'email'), undefined
+error: Middleware auth.js adminAccess Cannot read properties of undefined (reading 'email'), undefined
+error: Middleware auth.js adminAccess Cannot read properties of undefined (reading 'email'), undefined
+error: Middleware auth.js adminAccess Cannot read properties of undefined (reading 'email'), undefined
+error: Middleware auth.js adminAccess Cannot read properties of undefined (reading 'email'), undefined
+error: Middleware auth.js adminAccess Cannot read properties of undefined (reading 'email'), undefined
+error: Middleware auth.js adminAccess Cannot read properties of undefined (reading 'email'), undefined
+error: Middleware auth.js adminAccess Cannot read properties of undefined (reading 'email'), undefined
