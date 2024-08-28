@@ -5,7 +5,11 @@
 }
 body {
     background-color: black;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
+}
+.logo{
+    color: white;
 }
 .h1__realtimeproducts{
     margin:20px;
@@ -82,32 +86,41 @@ body {
     color: green;
 }
 .ul__productsList li {
+    display: flex;
+    flex-direction: column;
     color: rgb(206, 199, 199);
-    padding: 20px;
-    width: 180px;
-    height: auto;
-    text-align: center;
+    padding-top: 20px;
+    width: 200px;
+    height: 350px;
+    align-items: flex-start;
     border-radius: 26px;
-    background: linear-gradient(145deg, #191919, #1e1e1e);
-    box-shadow: 26px 26px 52px #1a1a1a, -26px -26px 52px #1e1e1e;
+    padding: 20px;
+    border: solid rgba(255, 255, 255, 0.253) 1px;
 }
 .h1Products {
     color: white;
 }
-.div_pages {
-    color : white;
-}
 .header {
     justify-content: space-between;
-    padding : 50px;
     display: flex;
+    padding : 50px;
 }
 .buttons button{
     width: 80px;
     margin: 10px;
 }
 .div_pages{
+    color : white;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin: 40px;
+}
+.productImg{
+    width: auto;
+    height: 150px;
+    margin: auto;
+}
+.addButton{
+    margin: 20px auto;
 }

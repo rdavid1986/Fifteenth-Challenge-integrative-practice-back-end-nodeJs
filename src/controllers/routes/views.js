@@ -66,7 +66,7 @@ export const cart = async (req, res) => {
     const products = cart.products;
     const quantity = cart.quantity;
     res.render("carts", {
-        style: "realTimeProducts.css", products: products,
+        style: "cart.css", products: products,
         quantity: quantity, cart: cid
     });
 };

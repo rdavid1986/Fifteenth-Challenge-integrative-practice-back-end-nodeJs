@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .register {
     color: white;
     background-color: rgb(0, 0, 0);
@@ -17,4 +22,7 @@ h1 {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+}
+.acount {
+    margin: 10px;
 }

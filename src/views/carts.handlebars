@@ -1,44 +1,43 @@
-<h1 class="h1Products">
-  Cart 
-</h1>
-<div class="buttons">
+<header class="header">
+    <h1 class="h1Products">
+        Cart
+    </h1>
+    <div class="buttons">
         <a href="/api/session/logout"><button id="logout_button">Logout</button></a>
-        <a href='/profile' ><button class="button">Profile</button></A>
-        <a href='/products' ><button class="button">Shop</button></A>
+        <a href='/profile'><button class="button">Profile</button></A>
+        <a href='/products'><button class="button">Shop</button></A>
     </div>
+</header>
 
-{{#if products}}
-  <ul id="productsUl" class="ul__productsList">
-    {{#each products}}
-      <li style="margin: 20px;">
-        <strong>Title:</strong> {{lookup _id "title"}}
-        <br>
-        <strong>Description:</strong> {{lookup _id "description"}}
-        <br>
-        <strong>Category:</strong> {{lookup _id "category"}}
-        <br>
-        <strong>Price:</strong> {{lookup _id "price"}}
-        <br>
-        <strong>Thumbnail:</strong> {{lookup _id "thumbnail"}}
-        <br>
-        <strong>Code:</strong> {{lookup _id "code"}}
-        <br>
-        <strong>Stock:</strong> {{lookup _id "stock"}}
-        <br>
-        <br>
-        <strong>quantity:</strong> {{quantity}}
-        <br>
-        <br>
-        <button id="delete_product_cart" class="delete_product_cart" 
-        data-cid2="{{cart}}" 
-        data-pid="{{lookup _id "_id"}}">Delete product in cart</button>
-      </li>
-    {{/each}}
-  </ul>
-{{else}}
-  <p class="ul__productsList">Cart is empty.</p>
-{{/if}}
-  <button id="delete_cart" class="delete_cart" data-cid="{{cart}}">Delete cart</button>
-  <a href="/api/carts/{{cart}}/purchase"><button id="buyButton" class="buyButton" >Purchase</button></a>
+<div class="cart">
+  
+    {{#if products}}
+        <ul id="productsUl"
+            class="ul__productsList">
+            {{#each products}}
+                <li style="margin: 20px;">
+                    <p><strong>{{lookup _id "title"}}</strong> </p>
+
+                    <p><strong>{{lookup _id "category"}}</strong></p>
+
+                    <p><strong>price: $ {{lookup _id "price"}}</strong></p>
+
+                    <img src="{{lookup _id "thumbnail"}}" alt="{{lookup _id " title"}}">
+
+                    <p class="quantity"><strong>quantity:</strong> {{quantity}}</p>
+
+                    <button id="delete_product_cart" class="delete_product_cart" data-cid2="{{cart}}" data-pid="{{lookup _id "_id"}}">Remove item from cart</button>
+                </li>
+            {{/each}}
+        </ul>
+    {{else}}
+        <p class="ul__productsList">Cart is empty.</p>
+    {{/if}}
+    
+        <button id="buyButton" class="buyButton"><a href="/api/carts/{{cart}}/purchase">Purchase</a></button>
+
+        <button id="delete_cart" class="delete_cart" data-cid="{{cart}}">Emptying the cart</button>
+    
+</div>
 <script src="/js/cart.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

@@ -4,13 +4,16 @@
     box-sizing: border-box;
 }
 .purchase-container {
-    background-color: black;
+   background-color: black;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     height: 100vh;
     margin: 0;
     text-align: center;
     color: white;
+}
+.purchase-container ul li {
+    list-style: nome;
 }

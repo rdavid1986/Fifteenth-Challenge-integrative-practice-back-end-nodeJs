@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    margin:20px;
+}
 .reset {
     color: white;
     background-color: rgb(0, 0, 0);
@@ -9,9 +17,11 @@
     flex-wrap: wrap;
     align-items: center;
 }
-h1 {
-    margin:20px;
+.resetPasswordFrom{
+    display: flex;
+    flex-direction: column;
 }
+
 #registerForm {
     background-color: black;
     height: 500px;
@@ -20,4 +30,10 @@ h1 {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+}
+.input{
+    margin: 10px;
+}
+p{
+    margin: 10px;
 }
